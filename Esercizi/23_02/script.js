@@ -34,3 +34,22 @@ function sostituisci_carattere(s,c1,c2)
 //assegnazione nel ciclo (elemento per elemento)
 //for(var i =0;i<.length;i++){s[i]="h"}//avro tutti i caratteri della stringa uguali ad h
 //x="c" x="ci" x="cit"
+
+//che dato in ingresso un vettore v
+// di dimensione dim, modifichi v scalando
+// le sue componenti
+//di un fattore d. 
+//Si ricorda che scalare un vettore
+// di un fattore d significa moltiplicare 
+//tutte le
+//sue componenti per il valore d.
+
+//scalavettore(v,d)  let v = [1,2,3,45,6,7,8,9]
+
+//scalavettore(v,3)= [3,6,9]  
+
+
+// inverti(s);
+//che, data in input una stringa s 
+//restituisca in output la stringa s 
+//con i caratteri invertiti.
