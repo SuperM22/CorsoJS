@@ -1,0 +1,261 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 LucidaGrande;
+\f3\froman\fcharset0 Times-Italic;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red67\green67\blue67;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c33333\c33333\c33333;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid102\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid202\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid302\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 void fibonacci(int N);\
+che, dato in ingresso un intero N, calcoli e stampi i primi N numeri della serie di Fibonacci.\
+La serie di Fibonacci inizia con 1, 1 ed ogni numero successivo \'e8 dato dalla somma dei due\
+precedenti: 1, 1, 2, 3, 5, 8, 13, 21, . . .\
+\
+\
+\
+void soluzioneSistemaLineare(int i1, int i2);\
+che, dati in ingresso due interi i1 e i2, risolva l\'92equazione:\
+i1 x + i2 = 0\
+e ne stampi il risultato a schermo.\
+\
+\
+\
+void conversioneTemperatura(int t, char c);\
+che, dati in ingresso un intero t e un char c rappresentanti rispettivamente un valore di\
+temperatura e la scala di temperatura scelta ed effettui la conversione nelle altre scale e ne\
+stampi a schermo il risultato. Le scale da considerare sono Celsius (carattere \'93C\'94), Kelvin\
+(carattere \'93K\'94) e Fahrenheit (carattere \'93F\'94). Formule di conversione:\
+K = C + 273.15\
+F = C * 9/5 + 32\
+\
+\
+\
+int mcm(int i1, int i2);\
+che, dati in ingresso due interi i1 e i2, ne calcoli, e stampi a schermo, il minimo comune\
+\
+\
+------------------------------------------------SOLUZIONE ESERCIZIO 1 --------------------------------\
+void fibonacci(int N)\{\
+    if (N==1)\{\
+        printf("1/n");\
+    \}\
+        if (N==2)\{\
+            printf("1,1/n");\
+            \
+        \}\
+    if (N>=3)\{\
+        int n=1;int x=1;\
+        printf("1,1");\
+        for (int i=3;i<N;i++)\{\
+            \
+            int h = n+x;\
+            x=n;\
+            n=h;\
+            printf(",%d",h);\
+            \
+            \
+        \}\
+    \}\
+    // esercizio 10 TESTED\
+  printf("\\n");\
+\}\
+\
+\
+-----------------------------------------------------------------------------------------------------\
+\
+void vec_scale(double v[ ], int dim, double d);\
+che dato in ingresso un vettore v di dimensione dim, modifichi v scalando le sue componenti\
+di un fattore d. Si ricorda che scalare un vettore di un fattore d significa moltiplicare tutte le\
+sue componenti per il valore d.\
+\
+\
+\
+\
+double vec_dot(double src1[ ], double src2[ ], int dim);\
+che, dati in ingresso due vettori della stessa dimenzione dim, ritorni il loro prodotto scalare.\
+Si ricorda che il prodotto scalare tra due vettore \'e8 uguale alla somma dei prodotti delle\
+componenti dei due vettori:\
+(x_1 * y_1) + (x_2 * y_2) + \'85 + (x_dim * y_dim)\
+\
+\
+\
+\
+bool vec_positive_check(double v[ ], int dim);\
+che, dato in ingresso un array v di dimensioni dim, restituisca in output un booleano. Il\
+booleano sar\'e0 true se tutti i valori contenuti nell\'92array di input sono positivi, altrimenti sar\'e0\
+false.\
+\
+\
+\
+String copia(String s, int N);\
+che, date in input la stringa s e un intero N, restituisca in output una stringa contenente tutti i\
+caratteri di s fino all\'92intero N. Se N eccede la lunghezza della stringa, la funzione restituisce\
+l\'92intera stringa s.\
+\
+\
+\
+void seleziona_alcuni_char(char s[ ], int idxs[ ], int dim);\
+che, data in input la stringa s e un array di indici idxs con la sua dimensione dim, stampi a\
+schermo i caratteri corrispondenti agli indici. (Nota: la funzione deve controllare che gli indici\
+siano contenuti in s).\
+\
+\
+\
+\
+Scrivere la funzione C\
+char* inverti(char s[ ]);\
+che, data in input una stringa s restituisca in output la stringa s con i caratteri invertiti.\
+\
+\
+\
+\
+String sostituisci_carattere(String s, char c1, char c2);\
+che, dati in input una stringa s, e due caratteri c1 e c2, crei e restituisca in output una stringa\
+contenente tutti i caratteri di s1 nella quale il carattere c1 deve essere sostituito dal carattere\
+c2.\
+\
+\
+\
+\
+String sostituisci_maiuscole(String s);\
+che, dati in input una stringa s, costruisca e restituisca in output una nuova stringa in cui il\
+primo carattere di ciascuna parola nella stringa di partenza \'e8 stato reso maiuscolo. Tutti gli\
+altri caratteri devono essere resi minuscoli. Esempio:\
+input: \'93sTUDiare TdP mI piACe\'94\
+output: \'93Studiare Tdp Mi Piace\'94\
+per controllare che un carattere c sia maiuscolo si pu\'f2 effettuare il seguente test:\
+(c > \'91A\'92 && c < \'91Z\'92) (lo stesso vale per controllare che un carattere sia minuscolo\
+per convertire un carattere c da maiuscolo a minuscolo si pu\'f2 procedere nel seguente\
+modo:\
+c - \'91A\'92 + \'91a\'92 (invece, per convertire invece da minuscolo a maiuscolo: c - \'91a\'92 + \'91A\'92)\
+\
+\
+\
+\
+bool check_minuscole(String s);\
+che, data in input una stringa s, restituisca in output un booleano. Il booleano sar\'e0 true se\
+tutte i caratteri della stringa sono minuscoli, altrimenti restituir\'e0 false.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\fs36 \cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Scrivere un programma che stampi a video i primi dieci numeri interi\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Scrivere un programma che stampi a video i primi dieci interi pari compresi fra 20 e 0, partendo da 20.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Scrivere un programma che stampi le tabellina del numero dato come argomento\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Stampare a video la seguente\'a0figura:\cb1 \uc0\u8232 \cb3 ******\cb1 \uc0\u8232 \cb3 *****\cb1 \uc0\u8232 \cb3 ****\cb1 \uc0\u8232 \cb3 ***\cb1 \uc0\u8232 \cb3 **\cb1 \uc0\u8232 \cb3 *\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Stampare a video la seguente\'a0figura:\cb1 \uc0\u8232 \cb3 #\cb1 \uc0\u8232 \cb3 ##\cb1 \uc0\u8232 \cb3 ###\cb1 \uc0\u8232 \cb3 ####\cb1 \uc0\u8232 \cb3 #####\cb1 \uc0\u8232 \cb3 ######\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Stampare a video la seguente\'a0figura:\cb1 \uc0\u8232 \cb3 1 \'a0 \'a0 \'a0654321\cb1 \uc0\u8232 \cb3 12 \'a0 \'a0 \'a054321\cb1 \uc0\u8232 \cb3 123 \'a0 \'a0 \'a04321\cb1 \uc0\u8232 \cb3 1234 \'a0 \'a0 \'a0321\cb1 \uc0\u8232 \cb3 12345 \'a0 \'a0 \'a021\cb1 \uc0\u8232 \cb3 123456 \'a0 \'a0 \'a01\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \strokec2 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl540\partightenfactor0
+\ls2\ilvl0
+\f1\fs36 \cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Scrivere un programma che calcoli il risultato dell\'92esame di uno studente.\cb1 \uc0\u8232 \cb3 Il programma prender\'e0 in ingresso:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl540\partightenfactor0
+\ls2\ilvl1\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Il voto ottenuto nella prova scritta (variabile tra -8 e +8)\cb1 \
+\ls2\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Il voto ottenuto nella prova pratica (variabile tra 0 e 24)\cb1 \
+\pard\pardeftab720\sa360\partightenfactor0
+\cf4 \cb3 Memorizzati questi dati proceder\'e0 al calcolo del risultato finale in trentesimi procedendo come segue:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls3\ilvl1\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Il risultato finale \'e8 la somma dei risultati.\cb1 \
+\ls3\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 se il voto di teoria \'e8 minore (o uguale) di zero e la somma dei voti di teoria e pratica \'e8 maggiore di 18 lo studente \'e8 bocciato.\cb1 \
+\ls3\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 se il voto di teoria \'e8 minore (o uguale) di zero e il voto di pratica \'e8 minore di 18 il programmalo studente \'e8 bocciato.\cb1 \
+\ls3\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 se il voto di teoria \'e8 maggiore di zero e la somma dei voti di teoria e pratica \'e8 minore di 18lo studente \'e8 bocciato.\cb1 \
+\ls3\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 se la somma di teoria e pratica vale 31 o 32 il programma stampa: \'93congratulazioni: 30 e lode\'94\cb1 \
+\ls3\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 in tutti gli altri casi lo studente \'e8 promosso e viene riportato il voto calcolato.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0\cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Scrivere un programma che chieda agli utenti due stringhe in ingresso, le stringhe possono valere solo: \'93carta\'94, \'93forbice\'94 o \'93sasso\'94. Il programma dovr\'e0 quindi effettuare i dovuti controlli e dichiarare il vincitore secondo le note regole della \'93morra cinese\'94 (forbice vince su carta, carta vince su sasso, sasso vince su forbice).\cb1 \
+\ls4\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Scrivere una funzione per calcolare l\'92importo di una tassa\'a0secondo la seguente tabella:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls4\ilvl1\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Fino a\'a010.000 \'80,\'a0l\'92importo della tassa \'e8 del 10%\cb1 \
+\ls4\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Fino a 20.000 \'80, l\'92importo della tassa \'e8 del 10% per i primi 10.000 \'80, del 7 % sul restante.\cb1 \
+\ls4\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Fino a 30.000 \'80, l\'92importo \'e8 ancora del 10% per i primi 10.000 \'80, poi del 7% fino a 20.000 ed infine il 5% sul restante.\cb1 \
+\ls4\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Oltre i 30.000 \'80 ci si comporta come prima, aggiungendo un\'a0ulteriore 3%\'a0\'e8 sulla porzione oltre i 30.000 \'80.\cb1 \
+\ls4\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9642 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Per ogni importo non valido si ritorni -1 (qualunque importo che non sia un numero reale e positivo).\cb1 \
+\pard\pardeftab720\sa360\partightenfactor0
+
+\f3\i \cf4 \cb3 Esempi:
+\f1\i0 Un importo\'a0di\'a010, dovrebbe tornare\'a01 (1 \'e8 il 10% di\'a010)\cb1 \uc0\u8232 \cb3 Un importo\'a0di\'a021, dovrebbe tornare\'a01.75 (10% di 10 + 7% di\'a010 + 5% di\'a01)\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \strokec2 \
+\
+\
+\
+\
+}
