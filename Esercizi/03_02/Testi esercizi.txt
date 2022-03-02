@@ -1,0 +1,50 @@
+Testo Esercizio Interfacce 
+
+Si vogliono mantenere le informazioni su un deposito di contenitori di liquidi.
+Ogni contenitore (C) è dotato di un codice univoco; i contenitori possono essere di due tipi: lattine (L) e bidoni (B) entrambe queste categorie sono dotate di un campo nome per identificare il liquido contenuto e di un campo qta per dichiarare la quantità contenuta.
+E' richiesta la presenza di una interfaccia CMP che contenga un metodo confronta() in grado di effettuare un confronto di peso fra due contenitori omologhi (L o B) considerando che i bidoni hanno sempre una quantità di liquido stoccato maggiore delle lattine.
+Realizzare poi una classe U (utils) contenente un metodo C[] filtra(C[] T, C c) che riceve in ingresso un vettore T di contenitori ed un contenitore campione.
+Il metodo filtra deve restituire il vettore T ripulito di tutti i contenitori che contengono lo stesso liquido del contenitore
+campione (C c) passato come parametro.
+
+
+
+Testo esercizi Collection Framework
+
+
+Sia data una classe Contatto le cui istanze rappresentano contatti telefonici. Ogni contatto ha
+un nome, un cognome e un numero telefonico (tutti di tipo String), un costruttore che riceve come parametro
+il nome, il cognome e il numero di telefono associati al contatto, metodi per leggere tali valori e il metodo
+toString() che restituisce una rappresentazione testuale del contatto.
+Scrivere una classe Rubrica che rappresenta una collezione di contatti. La classe memorizza i contatti per
+mezzo di una lista ed è dotata dei seguenti metodi:
+-- void aggiungiContatto(String nome, String cognome, String telefono) che aggiunge un contatto alla
+rubrica;
+-- void rimuoviContatto(String nome, String cognome) che rimuove dalla rubrica il contatto associato
+al nome e cognome dati;
+-- String cerca(String nome, String cognome) che dato un nome e cognome restituisce il numero di
+telefono associato a quel nome e cognome oppure null se il nome e cognome non sono presenti in
+rubrica;
+-- String toString() che restituisce una descrizione testuale dell’intera rubrica
+
+
+
+
+Sia definita una interface Articolo che rappresenta articoli
+commerciali, dotata dei metodi String getNome() che restituisce il nome dell'articolo, double getPrezzo()
+che restituisce il prezzo dell'articolo e String toString() che restituisce una descrizione (nome e prezzo)
+dell'articolo.
+Si scriva una classe Catalogo<E extends Articolo> che rappresenta un catalogo di articoli commerciali. La
+classe memorizza gli articoli in una lista ed è dotata dei metodi void aggiungiArticolo(E art) che aggiunge un
+articolo al catalogo, List<E> getArticoliSottoPrezzo(double prezzo) che restituisce una lista degli articoli il cui
+prezzo è minore del valore passato come parametro, e String toString() che stampa l'intero catalogo.
+
+
+
+ Sia definita una classe Mobile che implementa l'interface
+Articolo definita nell'esercizio precedente e rappresenta articoli per arredamento. La classe Mobile definisce
+i metodi int getLarghezza(),int getAltezza() e int getProfondita() che restituiscono le dimensioni di un mobile.
+Si scriva una classe ProvaMobile dotata di un metodo scegliMobile che riceve in ingresso un catalogo di
+oggetti di tipo Mobile (o suoi sotto-tipi), un prezzo e tre dimensioni (larghezza, altezza, profondità) e
+restituisce un lista di mobili il cui prezzo è inferiore al prezzo dato e le cui dimensioni sono inferiori alle
+dimensioni date.
